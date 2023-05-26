@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in js</title>
+</head>
+<body>
+    <div class="container">
+        This is json
+    </div>
+    <script>
+        //json formate to store and transport the data
+        // notation to transfer data
+        let jsonObj={
+            name: "sudeep",
+            channel1: "cws",
+            friend: "Rohit",
+            food: "vadapav",
+            names: ["sudeep", "Sanket", "Akash", "Rohit"],
+        }
+        console.log(jsonObj);
+
+        //convert valid json obj to string
+        let myjsonStr = JSON.stringify(jsonObj);
+        console.log(myjsonStr);
+
+       myjsonStr= myjsonStr.replace('sudeep','varun');
+        console.log(myjsonStr);
+
+        // convert json string to obj
+        newjsonObj=JSON.parse(myjsonStr);
+        console.log(newjsonObj);
+
+       
+
+    </script>
+</body>
+</html>

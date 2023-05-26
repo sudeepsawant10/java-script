@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+<body>
+        <!-- Imp topic -->
+        <div class="container">
+        <h1>String functions</h1>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quos quisquam saepe dicta architecto maiores quasi magni modi beatae delectus? Recusandae eveniet inventore facilis distinctio fugiat ipsam temporibus est magnam, corporis voluptatibus, voluptatem ducimus a dolor laborum natus obcaecati non unde dolores ipsum architecto voluptatum nostrum tempore? Vitae ex exercitationem ipsa suscipit, cupiditate fugit sequi veritatis excepturi facere quos quia est, voluptates iusto deleniti, in rem maxime!.</p>
+        </div>
+    </div>
+
+    <script>
+        // const cannot be changed.
+        //1. primitive dt =>int float str bool null undefined
+        //2. object =>Stores key value pairs
+        let myVar = 34;
+        let myVar2 = 34.4;
+        let myVar3 = "string";
+        let myVar4 = true;
+        let myVar5 = null;
+        let myVar6 = undefined;
+
+        //This is an object
+        let employee={
+            name: "jhon",
+            salary: 10,
+            channel: "This is Jhone",
+           "channel 2": "coding"
+        }
+        console.log(employee);
+
+        //This is an array use=>dom element accessing using array
+        let names=[1,9,7,8,2,3,"Jhone", undefined];
+        console.log(names);
+        console.log(names[0]);
+
+        // sorting elements
+        names = names.sort();
+        console.log(names);
+
+        names.push("element1");
+        console.log(names);
+
+        console.log(employee.salary);
+
+        // u cannot us employee.channel 2
+        console.log(employee['channel 2']);
+
+        // another way
+        let elements = new Array(1,2,3,4,"Jhone", undefined);
+        console.log(elements);
+        // let a2 = new Array(23);
+
+
+    </script>
+</body>
+</html>

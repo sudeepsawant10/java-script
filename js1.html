@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quos quisquam saepe dicta architecto maiores quasi magni modi beatae delectus? Recusandae eveniet inventore facilis distinctio fugiat ipsam temporibus est magnam, corporis voluptatibus, voluptatem ducimus a dolor laborum natus obcaecati non unde dolores ipsum architecto voluptatum nostrum tempore? Vitae ex exercitationem ipsa suscipit, cupiditate fugit sequi veritatis excepturi facere quos quia est, voluptates iusto deleniti, in rem maxime!.</p>
+        </div>
+    </div>
+    <script>
+        var string = "thi's";
+        console.log(string);
+
+        var string = 'thi"s';
+        console.log(string);
+
+        var string = 'this';
+        console.log(string);
+        var name = " harry "
+        var temp = `${name} is a nice person`;
+        var msg = " Harry is a youtuber";
+        console.log(string+name+msg);
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`Length of ${name } is ${len}`);
+        console.log(`Length of ${name } is\n ${len}`);
+        console.log(`Escape \\this \n and \t and \b`);
+
+        var y = new String("Hello this is string");
+        console.log(y);
+        console.log("The length of y is "+y.length);
+        console.log("The length of y is "+y.__prot__);
+
+        document.getElementById('content').innerHTML = '<h3>This is an h3 heading added using js<h3>'
+
+        
+    </script>
+</body>
+</html>

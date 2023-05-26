@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in js</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("Good evening");
+        // }
+
+         greet2 = ()=>console.log("Hello");
+        //using arrow function
+        let sum = (a,b)=>{
+            return a+b;
+        }
+
+        let sum2 = (a,b)=>a+b;
+        console.log(sum(10,20));
+        console.log(sum2(30,20));
+
+        let greet = ()=>{
+            console.log("good morning");
+        }
+
+        let half = a =>a/2;
+
+        console.log(half(10));
+        greet();
+        setTimeout(() => {
+            console.log("We are inside of setTimeOut");
+        }, 3000);
+
+        let obj1={
+            geeting: "Good morning ",
+            names: ["sudeep", "Sanket", "Akash", "Rohit"],
+            // speak(){
+            //     this.names.forEach((student)=>{
+            //         console.log("Hii "+student);
+            //         console.log("Hii ",student);
+            //     });
+            // }
+            speak(){
+                //it binds the parent this also known as laxical this only in arrow function
+                this.names.forEach((student)=>{
+                    console.log(this.geeting+ "Hii "+student);
+                    // console.log("Hii ",student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

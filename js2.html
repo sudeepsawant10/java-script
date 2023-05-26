@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>String functions</h1>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quos quisquam saepe dicta architecto maiores quasi magni modi beatae delectus? Recusandae eveniet inventore facilis distinctio fugiat ipsam temporibus est magnam, corporis voluptatibus, voluptatem ducimus a dolor laborum natus obcaecati non unde dolores ipsum architecto voluptatum nostrum tempore? Vitae ex exercitationem ipsa suscipit, cupiditate fugit sequi veritatis excepturi facere quos quia est, voluptates iusto deleniti, in rem maxime!.</p>
+        </div>
+    </div>
+    <script>
+        //        012
+       var str = "This is a string";
+       console.log(str);
+       //first occurence of substring
+       var position = str.indexOf('is');
+       console.log(position);
+
+       //last occurence of substr
+       position  = str.lastIndexOf('is');
+       console.log(position);
+
+       var substr = str.slice(10,16);
+       console.log(substr);
+
+       substr = str.slice(1,5);
+       console.log(substr);
+
+       substr = str.substring(1,5);
+       console.log(substr);
+
+        // slice()=>u can give negetiva values
+        //substring=> same as slice but cannot give -ve values.
+
+        var replaced = str.replace('string','sudeep');
+        console.log(str);
+        console.log(replaced);
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+
+        var newString = str.concat(' new string');
+        console.log(newString);
+
+        var strWithWhiteSpaces = "   this    contains     whitespaces  ";
+        console.log(strWithWhiteSpaces);
+        // spaces removed form start and end
+        console.log(strWithWhiteSpaces.trim());
+
+        var char3 = str.charAt(2);
+        console.log(char3);
+
+        char3 = str.charCodeAt(2);
+        console.log(char3);
+
+        console.log(str[2]);
+
+    </script>
+</body>
+</html>
