@@ -1,6 +1,5 @@
 // async => doesn't stops further execution it waits for none
 
-
 // sync code
 // console.log("Start operation");
 // function sleep(milliseconds) {
@@ -15,7 +14,6 @@
 // sleep(1000);
 // console.log("do something else..");
 
-
 // function count(index){
 //     console.log("Operation running..");
 //     i = 0;
@@ -24,7 +22,6 @@
 //     }
 //     console.log("End operation");
 // }
-
 
 // count(0);
 // console.log("do something else..");
@@ -42,15 +39,14 @@
 // sleep(2000);
 // console.log("do something else..");
 
-
 console.log("Start operation");
 function count(index) {
-    console.log("Operation running..");
-    i=0;
-    setTimeout(()=>{
-        console.log("in progress...");
-    },index);
-    console.log("End operation");
+  console.log("Operation running..");
+  i = 0;
+  setTimeout(() => {
+    console.log("in progress...");
+  }, index);
+  console.log("End operation");
 }
 
 count(2000);
